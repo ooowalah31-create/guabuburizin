@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBLIVION | RAW GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h1 class="glitch">RAW GEN V1</h1>
+        <textarea id="rawContent" placeholder="Paste your script/text here, babi..."></textarea>
+        
+        <div class="actions">
+            <button onclick="generateRaw()" id="genBtn">🚀 GENERATE RAW LINK</button>
+        </div>
+
+        <div id="resultArea" class="hidden">
+            <p>Your Raw Link:</p>
+            <input type="text" id="rawUrl" readonly>
+            <button onclick="copyLink()">📋 COPY</button>
+        </div>
+        
+        <div id="loader" class="hidden">GENERATING...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
